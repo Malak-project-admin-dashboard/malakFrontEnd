@@ -1,0 +1,185 @@
+/* Set a default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #f5f3ee;
+  /* background: url(./www.jpg) top right no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align:center;
+
+    height: 80vh; */
+}
+:root {
+  --primary:#e6cc9f;
+  --secondary: #b58867;
+  --light: #909297;
+  --dark: #b58867;
+}
+
+/* Adjust the main content area for larger screens */
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 20px;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+  background-color: #e6cc9f;
+
+}
+
+/* Make the active item in the sidebar stand out */
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  background-color: #e6cc9f;
+  color:#000;
+  border-color: #e6cc9f;
+ 
+}
+
+/* Make the sidebar sticky and scrollable */
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Style the navigation header */
+/* .nav__header{
+  padding-top: 15px;
+  font-size:52px;
+  color: #b58867;
+  font-weight: bold;
+} */
+
+/* Style the main content area */
+.main{
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 5%;
+
+  padding: 20px;
+  
+}
+
+/* Style the heading in the main content area */
+.main__header_title{
+  margin-left: 20%;
+  font-size: 24px;
+  
+  text-transform: uppercase;
+}
+
+/* Style the menu title in the sidebar */
+.menu__title{
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #b58867;
+}
+.menu__title2{
+  font-size: 22px;
+
+}
+/* Style the form for adding drugs */
+.form__add__drug{
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 10%;
+  font-size: 25px;
+
+}
+input{
+width: 266px;
+  height: 55px;
+} 
+
+button{
+font-weight:bold;
+  color: #000;
+ 
+}
+/* Style the confirmation order form */
+.form__confirmation__order {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 10%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.form__confirmation__order img{
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.form__confirmation__order .card-body{
+  margin-top: 20px;
+}
+
+.form__confirmation__order .card-text{
+  margin-top: 20px;
+}
+
+.form__confirmation__order .card-body button{
+  margin-top: 20px;
+}
+
+/* Style the form for adding events */
+.formOneSubmit{
+  width: 100%;
+  font-size: 20px;
+}
+
+/* Style the contact message form */
+.message__title_email{
+  display: flex;
+  flex-direction: row;
+}
+
+.form__contact__message{
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 10%;
+  font-size: 20px;
+}
+.img-Logo3{
+  height:70px;
+  width: 100px;
+
+  
+  }
+.form__contact__message .card-userName{
+  margin-right: 50px;
+}
+
+.form__contact__message .card-email{
+  margin-left: 200px;
+}
+
+/* Add hover effects to links */
+a:hover {
+  text-decoration: none;
+  color: #b58867;
+}
+
+button:hover {
+  cursor: pointer;
+}
